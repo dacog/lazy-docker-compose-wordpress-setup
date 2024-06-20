@@ -14,7 +14,7 @@ sudo chmod -R 777 wordpress
 
 # Source the alias file to ensure aliases are available in this session
 if [ -f ./alias ]; then
-    . ./docker_aliases
+    . ./alias.sh
 fi
 
 

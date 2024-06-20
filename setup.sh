@@ -21,7 +21,7 @@ DOCKER_COMPOSE=$(find_docker_compose)
 echo "Using Docker Compose command: $DOCKER_COMPOSE"
 
 # Alias file path
-ALIAS_FILE=./docker_aliases
+ALIAS_FILE=./alias.sh
 
 # Check for --no-alias argument
 if [ "$1" != "--no-alias" ]; then
