@@ -34,7 +34,7 @@ chmod +x start.sh
 
 ## How to use the aliases
 
-## `dc`
+## alias `dc`
 
 ```shell
 # Bring up the services
@@ -50,10 +50,36 @@ dc down -v
 dc ps
 ```
 
+## alias `wp-cli`
+
+NOTE: The alias has ` --allow-root`. This means you will run wp-cli as root.
+
+```shell
+# Check the WordPress version
+wpcli core version
+
+# Install a plugin
+wpcli plugin install hello-dolly --activate
+
+# Update WordPress core
+wpcli core update
+
+# Create a new post
+wpcli post create --post_title='My New Post' --post_content='This is the content of the post.' --post_status=publish
+```
+
+You can check the available commands at https://developer.wordpress.org/cli/commands/
+
+## alias `ẁpbackup`
+
+`wpbackup` uses wpcli to create a database dump in `./backups`
+
+
 ## Uninstall/ Remove
 
 If you don't need this anymore, just remove the containers and volumes, and remove the folders.
 
 ```shell
-
+# this removes all the volumes and databases, but does not delete the files in ./wordpress
+dc down -v 
 ```
