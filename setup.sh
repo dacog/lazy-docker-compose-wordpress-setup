@@ -30,7 +30,7 @@ if [ "$1" != "--no-alias" ]; then
     echo "alias wpcli=\"$DOCKER_COMPOSE exec wordpress wp  --allow-root \"" >> $ALIAS_FILE
     echo "alias wpbackup=\"wpcli db export /var/www/html/backups/sql_dump_\$(date +%Y-%m-%d-%H-%M-%S).sql\"" >> $ALIAS_FILE
     echo "alias wpdown=\"wpbackup && dc down -v \"" >> $ALIAS_FILE
-    echo "Aliases 'dc' and 'wpcli' set for this session. Source $(ALIAS_FILE) to use them."
+    echo "Aliases 'dc', 'wpcli', 'wpbackup', and 'wpdown' set for this session. Source $(ALIAS_FILE) to use them."
 
     # Source the alias file
     chmod +x $ALIAS_FILE
