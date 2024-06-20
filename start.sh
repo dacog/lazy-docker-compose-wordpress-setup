@@ -13,7 +13,7 @@ $DOCKER_COMPOSE up -d
 sudo chmod -R 777 wordpress
 
 # Source the alias file to ensure aliases are available in this session
-if [ -f ./docker_aliases ]; then
+if [ -f ./alias ]; then
     . ./docker_aliases
 fi
 
