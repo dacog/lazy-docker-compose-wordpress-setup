@@ -27,7 +27,7 @@ ALIAS_FILE=./docker_aliases
 if [ "$1" != "--no-alias" ]; then
     # Create or update the alias file
     echo "alias dc=\"$DOCKER_COMPOSE\"" > $ALIAS_FILE
-    echo "alias wpcli=\"$DOCKER_COMPOSE exec wordpress wp\"" >> $ALIAS_FILE
+    echo "alias wpcli=\"$DOCKER_COMPOSE exec wordpress wp  --allow-root \"" >> $ALIAS_FILE
     echo "Aliases 'dc' and 'wpcli' set for this session. Source $(ALIAS_FILE) to use them."
 
     # Source the alias file
