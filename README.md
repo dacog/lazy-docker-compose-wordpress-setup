@@ -4,6 +4,8 @@ I needed a quick way to get a WordPress instance up and running locally.
 
 I tried a few alternatives, nd they were all either too complicated or just didn't work when I followed the README, so here is my approach.
 
+I also wanted some quick commands for specific tasks, such as backup, wp-cli and docker compose.
+
 **Warning**:
 This approach is **only for local dev**. It is not secure, and you should not use it for Production anywhere. You have been warned.
 
