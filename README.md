@@ -87,10 +87,13 @@ wpcli post create --post_title='My New Post' --post_content='This is the content
 
 You can check the available commands at https://developer.wordpress.org/cli/commands/
 
-## alias `ẁpbackup`
+## alias `wpbackup`
 
 `wpbackup` uses wpcli to create a database dump in `./backups`
 
+## `wpdown`
+
+`wpdown` makes a database dump in ./backups, then runs docker down -v to remove the containers and volumes.
 
 ## Uninstall/ Remove
 
